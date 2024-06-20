@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="weather-app">
+      <div class="form-group">
+        <input
+          type="text"
+          id="city"
+          required
+          placeholder="Enter city"
+          class="search-bar"
+        />
+        <input type="button" value="Search" id="search-button" class="button" />
+      </div>
+      <section>
+        <div class="current-weather-display">
+          <div class="details">
+            <h1 class="city">Midrand</h1>
+            <br />
+            <p class="current-info">
+              <span id="current-time">Saturday 21:77, clear conditions</span>
+              <br />
+              Humidity:<strong> 54%</strong>, Wind: <strong>9km/h</strong>
+            </p>
+          </div>
+          <h2>
+            <div class="main-temperature">
+              <span class="current-emoji"> 🌞</span>
+              <span class="current-temp"> 15</span>
+              <span class="unit">℃ </span>
+            </div>
+          </h2>
+        </div>
+      </section>
+      <footer>
+        This project was coded by
+        <a class="coder" href="#" target="_blank"> Noxolo Ndlovu</a>
+        and is on
+        <a class="GitHub" href="#" target="_blank"> GitHub</a>
+        and
+        <a class="host" href="#" target="_blank"> hosted on Netlify</a>
+      </footer>
+    </div>
+    <script src="Weather.js"></script>
+  </body>
+</html>
