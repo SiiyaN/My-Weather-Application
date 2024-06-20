@@ -33,3 +33,20 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 });
+
+function getWeatherInfo(city) {
+  let apiKey = "f063aad8tb9d2a804775off7e6bf14bb";
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
+  axios.get(apiUrl).then(displayTemp);
+}
+function displayTemp(response) {
+  let temperatureElement = document.querySelector("#temperature");
+  let temperature = Math.round(response.data.temperature.current);
+  let city = response.data.city;
+
+  temperatureElement.innerHTML = `Current temperature in ${city} is ${temperature}°C`;
+
+  console.log(`Temperature: ${temperature}°C`);
+}
+
+getWeatherInfo("Paris");
