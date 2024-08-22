@@ -49,4 +49,4 @@ function displayTemp(response) {
   console.log(`Temperature: ${temperature}°C`);
 }
 
-getWeatherInfo("Paris");
+getWeatherInfo("Midrand");
